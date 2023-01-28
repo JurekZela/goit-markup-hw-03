@@ -1,0 +1,250 @@
+:root {
+  --primary-header: #ffffff;
+  --primary-footer: #2e2f42;
+  --hover-focus: #4d5ae5;
+  --btn: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-header);
+  color: var(--primary-footer);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.addr-contact {
+  font-style: normal;
+}
+linearGradient {
+  color-scheme: var(--primary-header);
+}
+/*header index.html*/
+.header {
+  background-color: var(--primary-header);
+}
+
+.web-logo {
+  color: var(--btn);
+}
+.web-logo:hover,
+.web-logo:focus {
+  color: var(--btn);
+}
+.web-logo {
+  font-family: "Raleway" sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.logo-studio {
+  color: var(--dark);
+}
+.logo-studio:hover,
+.logo-studio:focus {
+  color: var(--dark);
+}
+.logo-studio {
+  font-family: "Raleway" sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.link-header {
+  color: var(--dark);
+}
+.link-header:hover,
+.link-header:focus {
+  color: var(--hover-focus);
+}
+.link-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+.site-contact {
+  color: var(--text);
+}
+.site-contact:hover,
+.site-contact:focus {
+  color: var(--hover-focus);
+}
+.site-contact {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+/*hero index.html*/
+.hero {
+  background-color: var(--dark);
+}
+.hero-btn {
+  background-color: var(--btn);
+}
+.hero-btn {
+  color: var(--primary-header);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--primary-header);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hover-focus);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+/* .hero-btn{position: absolute;
+                width: 169px;
+                height: 56px;
+                left: 636px;
+                top: 428px;} */
+
+.hero-text {
+  color: var(--primary-header);
+}
+.hero-btn {
+  cursor: pointer;
+}
+.hero-btn {
+  background-color: var(--btn);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-state);
+}
+.hero-text {
+  font-size: 56px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+/*title index.html*/
+.card-title {
+  color: var(--dark);
+}
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+.title {
+  color: var(--dark);
+}
+
+.title-text {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+.title-text {
+  color: var(--text);
+}
+
+.title-professional {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+.title-professional {
+  color: var(--text);
+}
+
+.main-page {
+  color: var(--dark);
+}
+.main-page {
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+/*title portfolio 1.33
+                        .title-bonus{font-weight: 400;
+                            font-size: 16px;
+                            line-height: 1.33;}
+                            .title-bonus{color: var(--text);}
+
+
+             
+         /* portfolio button*/
+.link-btn {
+  cursor: pointer;
+}
+.link-btn:hover,
+.link-btn:focus {
+  background-color: var(--pressed-state);
+  color: var(--primary-header);
+}
+.link-btn {
+  color: var(--btn);
+  background-color: var(--accent);
+}
+.link-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.title-project {
+  color: var(--text);
+}
+
+/*footer*/
+.footer {
+  background-color: var(--primary-footer);
+}
+.logo-footer {
+  color: var(--light);
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--light);
+}
+.logo-footer {
+  font-family: "Raleway" sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.post-footer {
+  color: var(--accent);
+}
+.post-footer {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
