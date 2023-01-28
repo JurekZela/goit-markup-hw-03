@@ -11,10 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <a class="logo-studio link" href="./index.html">
         <span class="web-logo link">WEB</span>STUDIO</a
       >
@@ -40,17 +44,25 @@
         </ul>
       </address>
     </header>
-    <main>
+    <main class="container">
       <section class="our-projects">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="list">
           <li>
-            <button type="button" class="link-btn">All</button>
+            <button type="button" class="link-btn btn-all">All</button>
           </li>
-          <li><button type="button" class="link-btn">Web Site</button></li>
-          <li><button type="button" class="link-btn">App</button></li>
-          <li><button type="button" class="link-btn">Design</button></li>
-          <li><button type="button" class="link-btn">Marketing</button></li>
+          <li>
+            <button type="button" class="link-btn btn-site">Web Site</button>
+          </li>
+          <li><button type="button" class="link-btn btn-app">App</button></li>
+          <li>
+            <button type="button" class="link-btn btn-design">Design</button>
+          </li>
+          <li>
+            <button type="button" class="link-btn btn-marketing">
+              Marketing
+            </button>
+          </li>
         </ul>
         <ul class="list">
           <li>
@@ -164,7 +176,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a class="link logo-footer" href="./index.html"
         ><span class="web-logo link">WEB</span>STUDIO</a
       >
