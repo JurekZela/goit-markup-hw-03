@@ -16,20 +16,16 @@
 }
 
 /*---------------------------------BLOK----------------------------------------------------------------------*/
-.section {
-  padding-left: center;
-  margin-right: auto;
-}
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-header);
   color: var(--primary-footer);
@@ -48,6 +44,12 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.header {
+  margin-bottom: 96px;
+  border-bottom: 1px solid var(--accent);
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -56,14 +58,8 @@ body {
 .link {
   text-decoration: none;
 }
-linearGradient {
-  color-scheme: var(--primary-header);
-}
-/*header index.html*/
-.header {
-  background-color: var(--primary-header);
-}
 
+/*header index.html*/
 .main-nav {
   align-items: center;
   display: flex;
@@ -77,7 +73,7 @@ linearGradient {
   color: var(--btn);
 }
 .web-logo {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -95,7 +91,7 @@ linearGradient {
   color: var(--dark);
 }
 .logo-studio {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -153,8 +149,9 @@ linearGradient {
 
 /*----------------------------hero index.html------------------------*/
 .hero {
+  padding-top: 188px;
+  padding-bottom: 356px;
   height: 600px;
-  margin-bottom: 120px;
 }
 
 .hero {
@@ -170,7 +167,7 @@ linearGradient {
   text-align: center;
   display: inline-block;
   border: var(--btn);
-  padding: 11px 32px;
+  padding: 16px 32px;
   border-radius: 4px;
   min-width: 169px;
   background-color: var(--btn);
@@ -202,8 +199,8 @@ linearGradient {
 }
 
 .text-block {
-  display: flex;
-  justify-content: center;
+  width: 507px;
+  margin: 0 auto 48px;
 }
 
 .hero-text {
@@ -253,12 +250,12 @@ linearGradient {
   justify-content: center;
   padding: 0;
   margin: 0;
-  margin-top: 32px;
   color: var(--dark);
 }
 .title {
   padding: 0;
   margin: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.33;
@@ -267,6 +264,8 @@ linearGradient {
 .characteristic {
   display: flex;
   justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .title-info:not(:last-child) {
@@ -278,6 +277,11 @@ linearGradient {
 }
 .our-team {
   background-color: var(--light);
+}
+
+.card-block {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .title-text:not(:last-child) {
   margin-right: 24px;
@@ -296,10 +300,6 @@ linearGradient {
 .title-professional {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  margin-top: 8px;
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.02em;
@@ -309,10 +309,7 @@ linearGradient {
 .main-page {
   display: flex;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 0px;
-  margin-top: 120px;
-  margin-bottom: 72px;
+  margin: 0px 0px 72px 0px;
   padding: 0;
   font-size: 36px;
   line-height: 1.33;
@@ -322,13 +319,13 @@ linearGradient {
 .main-team {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
-  margin-bottom: 72px;
-  padding: 0;
+  padding-bottom: 72px;
+  padding-top: 120px;
   font-size: 36px;
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
+
 .main-style {
   background-color: var(--light);
 }
@@ -355,16 +352,13 @@ linearGradient {
 .work-results {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 
-.project-card {
+.project-card:nth-child(-n + 6) {
   margin-bottom: 48px;
 }
-
-.project-card:nth-last-child(-n + 3) {
-  margin-bottom: 120px;
-}
-
 .project-card:nth-child(3n) {
   margin-right: 0;
 }
@@ -383,8 +377,9 @@ linearGradient {
   margin-right: 40px;
 }
 
-/*btn----------------------------------*/
+/*nav-portfolio-------------------------------------*/
 
+/*btn----------------------------------*/
 .link-btn:hover,
 .link-btn:focus {
   background-color: var(--pressed-state);
@@ -394,8 +389,6 @@ linearGradient {
 }
 .btn-portfolio {
   display: flex;
-  margin-top: 96px;
-  margin-bottom: 72px;
   justify-content: center;
 }
 .btn-portfolio .button:not(:last-child) {
@@ -442,41 +435,44 @@ linearGradient {
 }
 /*-----------------------------Btn________---------*/
 
+.card {
+  display: block;
+  padding: 32px 0px 32px 16px;
+}
+.card {
+  border-bottom: 1px solid var(--accent);
+}
+.card {
+  border-left: 1px solid var(--accent);
+}
+
+.card {
+  border-right: 1px solid var(--accent);
+}
+
 .title-project {
+  margin: 0px;
   padding: 0;
-  margin-left: 16px;
-  margin: 0 0 32 16px;
   color: var(--text);
 }
 
-.project-name {
-  margin-left: 16px;
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
-.project-card {
-  border: 1px solid var(--accent);
-}
 /*-----------------------------footer--------------------------*/
 .footer {
-  height: 310px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .footer {
   background-color: var(--primary-footer);
 }
 
 .logo-footer {
-  font-family: "Raleway" sans-serif;
+  display: block;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   margin-bottom: 16px;
-}
-
-.ul-footer {
-  margin: 0;
-  padding: 0;
 }
 
 .logo-footer {
