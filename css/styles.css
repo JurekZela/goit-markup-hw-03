@@ -15,7 +15,20 @@
   box-sizing: border-box;
 }
 
+/*---------------------------------BLOK----------------------------------------------------------------------*/
+.section {
+  padding-left: center;
+  margin-right: auto;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
+  margin-left: auto;
+  margin-right: auto;
   width: 1158px;
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-header);
@@ -431,12 +444,13 @@ linearGradient {
 
 .title-project {
   padding: 0;
-  margin: 0;
-  margin-bottom: 32px;
+  margin-left: 16px;
+  margin: 0 0 32 16px;
   color: var(--text);
 }
 
 .project-name {
+  margin-left: 16px;
   margin-top: 32px;
   margin-bottom: 8px;
 }
@@ -480,14 +494,4 @@ linearGradient {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--accent);
-}
-/*---------------------------------BLOK----------------------------------------------------------------------*/
-.section {
-  padding-left: center;
-  margin-right: auto;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
 }
