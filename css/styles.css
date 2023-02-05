@@ -11,7 +11,12 @@
   --accent: #e7e9fc;
   --light: #f4f4fd;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
+  width: 1158px;
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-header);
   color: var(--primary-footer);
@@ -38,15 +43,17 @@ body {
 .link {
   text-decoration: none;
 }
-.addr-contact {
-  font-style: normal;
-}
 linearGradient {
   color-scheme: var(--primary-header);
 }
 /*header index.html*/
 .header {
   background-color: var(--primary-header);
+}
+
+.main-nav {
+  align-items: center;
+  display: flex;
 }
 
 .web-logo {
@@ -61,6 +68,10 @@ linearGradient {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+}
+
+.logo-studio {
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -83,7 +94,15 @@ linearGradient {
 .link-header:focus {
   color: var(--hover-focus);
 }
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+.site-nav {
+  display: flex;
+}
 .link-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
@@ -92,6 +111,13 @@ linearGradient {
 .site-contact {
   color: var(--text);
 }
+
+.site-contact {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .site-contact:hover,
 .site-contact:focus {
   color: var(--hover-focus);
@@ -101,11 +127,31 @@ linearGradient {
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
+.tele-mail {
+  font-style: normal;
+  display: flex;
+}
+.tele-mail .contact:not(:last-child) {
+  margin-right: 40px;
+}
+.tele-mail {
+  margin-left: auto;
+}
 
-/*hero index.html*/
+/*----------------------------hero index.html------------------------*/
+.hero {
+  height: 600px;
+  margin-bottom: 120px;
+}
+
 .hero {
   background-color: var(--dark);
 }
+.btn-block {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-btn {
   cursor: pointer;
   text-align: center;
@@ -141,20 +187,60 @@ linearGradient {
 .hero-btn:focus {
   background-color: var(--pressed-state);
 }
+
+.text-block {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-text {
   margin-top: 0;
   margin-bottom: 48px;
-
   color: var(--primary-header);
   font-size: 56px;
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
 
+/*-----------------------we-are-------------------*/
+
+.page-doing {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.we-are:not(:last-child) {
+  margin-right: 24px;
+}
+
+.we-are {
+  border: 1px solid #e7e9fc;
+}
+
 /*title index.html*/
+.team-name {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.team-info:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team-info {
+  background-color: var(--primary-header);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .card-title {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
+  margin-top: 32px;
   color: var(--dark);
 }
 .title {
@@ -165,11 +251,23 @@ linearGradient {
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
+.characteristic {
+  display: flex;
+  justify-content: center;
+}
+
+.title-info:not(:last-child) {
+  margin-right: 24px;
+}
+
 .title {
   color: var(--dark);
 }
 .our-team {
   background-color: var(--light);
+}
+.title-text:not(:last-child) {
+  margin-right: 24px;
 }
 .title-text {
   padding: 0;
@@ -183,8 +281,12 @@ linearGradient {
 }
 
 .title-professional {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
+  margin-top: 8px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.02em;
@@ -192,14 +294,38 @@ linearGradient {
 }
 
 .main-page {
-  color: var(--dark);
-}
-.main-page {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0px;
+  margin-top: 120px;
+  margin-bottom: 72px;
   padding: 0;
-  margin: 0;
   font-size: 36px;
   line-height: 1.33;
   letter-spacing: 0.02em;
+}
+
+.main-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 72px;
+  padding: 0;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+.main-style {
+  background-color: var(--light);
+}
+
+.main-team {
+  color: var(--dark);
+}
+
+.main-page {
+  color: var(--dark);
 }
 
 /*title portfolio 1.33
@@ -211,12 +337,45 @@ linearGradient {
 
              
          /* portfolio button*/
+
+/*menu portfolio----------------*/
+.work-results {
+  display: flex;
+  width: 1128px;
+  flex-wrap: wrap;
+}
+
+.project-card:nth-child() {
+  margin-right: 24px;
+}
+
+.blok-contact {
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+}
+
+.blok-contact .contact:not(:last-child) {
+  margin-right: 40px;
+}
+
+/*btn----------------------------------*/
+
 .link-btn:hover,
 .link-btn:focus {
   background-color: var(--pressed-state);
   color: var(--primary-header);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-portfolio {
+  display: flex;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.btn-portfolio .button:not(:last-child) {
+  margin-right: 24px;
 }
 .link-btn {
   display: inline-block;
@@ -258,17 +417,43 @@ linearGradient {
   min-height: 48px;
 }
 /*-----------------------------Btn________---------*/
+
 .title-project {
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
   color: var(--text);
 }
 
-/*-----------------------------footer--------------------------*/
+.project-name {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
 
+.project-card {
+  border: 1px solid var(--accent);
+}
+/*-----------------------------footer--------------------------*/
+.footer {
+  height: 310px;
+}
 .footer {
   background-color: var(--primary-footer);
 }
+
+.logo-footer {
+  font-family: "Raleway" sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 16px;
+}
+
+.ul-footer {
+  margin: 0;
+  padding: 0;
+}
+
 .logo-footer {
   color: var(--light);
 }
@@ -276,12 +461,7 @@ linearGradient {
 .logo-footer:focus {
   color: var(--light);
 }
-.logo-footer {
-  font-family: "Raleway" sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-}
+
 .post-footer {
   padding: 0;
   margin: 0;
@@ -291,6 +471,10 @@ linearGradient {
   color: var(--accent);
 }
 /*---------------------------------BLOK----------------------------------------------------------------------*/
+.section {
+  padding-left: center;
+  margin-right: auto;
+}
 
 .container {
   padding-left: 15px;
