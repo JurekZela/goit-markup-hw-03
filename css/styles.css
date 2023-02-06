@@ -16,6 +16,18 @@
 }
 
 /*---------------------------------BLOK----------------------------------------------------------------------*/
+h1 h2 h3 h4 h5 h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
 
 .container {
   margin-left: auto;
@@ -46,8 +58,13 @@ body {
 }
 
 .header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
   margin-bottom: 96px;
   border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .list {
@@ -149,20 +166,20 @@ body {
 
 /*----------------------------hero index.html------------------------*/
 .hero {
-  padding-top: 188px;
-  padding-bottom: 356px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
   height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero {
   background-color: var(--dark);
 }
-.btn-block {
-  display: flex;
-  justify-content: center;
-}
 
 .hero-btn {
+  margin-left: 636px;
   cursor: pointer;
   text-align: center;
   display: inline-block;
@@ -198,12 +215,8 @@ body {
   background-color: var(--pressed-state);
 }
 
-.text-block {
-  width: 507px;
-  margin: 0 auto 48px;
-}
-
 .hero-text {
+  padding-left: 473px;
   margin-top: 0;
   margin-bottom: 48px;
   color: var(--primary-header);
@@ -213,6 +226,21 @@ body {
 }
 
 /*-----------------------we-are-------------------*/
+.main-page {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
+}
+
+.main-page {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+}
 
 .page-doing {
   display: flex;
@@ -228,9 +256,9 @@ body {
 }
 
 /*title index.html*/
-.team-name {
-  display: flex;
-  justify-content: center;
+.feature {
+  width: 1440px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -261,11 +289,10 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
+
 .characteristic {
   display: flex;
   justify-content: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .title-info:not(:last-child) {
@@ -283,6 +310,12 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.team-name {
+  display: flex;
+  justify-content: center;
+}
+
 .title-text:not(:last-child) {
   margin-right: 24px;
 }
@@ -306,54 +339,36 @@ body {
   color: var(--text);
 }
 
-.main-page {
-  display: flex;
-  justify-content: center;
-  margin: 0px 0px 72px 0px;
-  padding: 0;
-  font-size: 36px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
-}
-
 .main-team {
   display: flex;
   justify-content: center;
-  padding-bottom: 72px;
-  padding-top: 120px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
 
 .main-style {
-  background-color: var(--light);
+  width: 1440px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f4f4fd;
 }
 
 .main-team {
   color: var(--dark);
 }
 
-.main-page {
-  color: var(--dark);
+/*menu portfolio----------------*/
+
+.btn-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
-/*title portfolio 1.33
-                        .title-bonus{font-weight: 400;
-                            font-size: 16px;
-                            line-height: 1.33;}
-                            .title-bonus{color: var(--text);}
-
-
-             
-         /* portfolio button*/
-
-/*menu portfolio----------------*/
 .work-results {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 72px;
-  padding-bottom: 120px;
 }
 
 .project-card:nth-child(-n + 6) {
@@ -387,10 +402,13 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.btn-portfolio {
-  display: flex;
+
+.btn-block {
+  margin-bottom: 72px;
   justify-content: center;
+  display: flex;
 }
+
 .btn-portfolio .button:not(:last-child) {
   margin-right: 24px;
 }
@@ -458,6 +476,9 @@ body {
 
 /*-----------------------------footer--------------------------*/
 .footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
